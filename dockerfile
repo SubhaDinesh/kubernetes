@@ -1,4 +1,4 @@
-FROM ubuntu-minimal:latest
+FROM ubuntu-minimal:20.04
 WORKDIR /app
 COPY app.py /app
 RUN apt-get update && apt-get install -y git
