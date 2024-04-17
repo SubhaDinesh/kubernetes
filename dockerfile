@@ -4,7 +4,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y git
 RUN apt-get update && apt-get install -y curl
 #RUN apt-get update && apt-get install -y awscli
-RUN curl -fsSL https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3RUN apt-get update &&
+RUN curl -fsSL https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3RUN apt-get update && \
 apt-get install -y --no-install-recommends curl && rm -rf /var/lib/apt/lists/*
 RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && \
 install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl && rm kubectl
