@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 WORKDIR /app
-COPY app.py /app
+#COPY app.py /app
 RUN apt-get update && apt-get install -y git
 RUN apt-get update && apt-get install -y curl
 RUN git clone https://github.com/SubhaDinesh/kubernetes.git
